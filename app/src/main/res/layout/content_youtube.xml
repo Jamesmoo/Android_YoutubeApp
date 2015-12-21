@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="myapp.com.android_youtubeapp.YoutubeActivity"
+    tools:showIn="@layout/activity_youtube">
+
+    <!--
+        NOTE: since this will be a youtube player, it expects to take over the entire screen
+            any padding entries for the layout will have to be removed
+    -->
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+</LinearLayout>
