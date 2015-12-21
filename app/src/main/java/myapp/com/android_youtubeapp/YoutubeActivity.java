@@ -15,8 +15,10 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
-    private String GOOGLE_API_KEY = "TBA";
-    private String YOUTUBE_VIDEO_ID = "TBA";
+    //for a google api key need to go to https://console.developers.google.com
+    private String GOOGLE_API_KEY = "<<PLACEHOLDER PUT YOUR GOOGLE API KEY HERE >>>";
+
+    private String YOUTUBE_VIDEO_ID = "E5O7COyG1SI";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,23 +31,6 @@ public class YoutubeActivity extends YouTubeBaseActivity implements YouTubePlaye
         //the "this" keyword refers to where the 2 needed methods (onInitializationSuccess & onInitializationFailure )
         //are located, in this app, the 2 methods are in THIS same class file
         youTubePlayerView.initialize(GOOGLE_API_KEY, this);
-
-
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-
-
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
-
-
 
     }
 

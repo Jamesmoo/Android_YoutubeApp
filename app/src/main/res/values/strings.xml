@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android_YoutubeApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_youtube">Youtube Player</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_standalone">StandaloneActivity</string>
+    <string name="player_video">Play Video</string>
+    <string name="play_list">Play Playlist</string>
+    <string name="standalone_menu">Standalone Sub Menu</string>
+</resources>
